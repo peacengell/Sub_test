@@ -1,16 +1,11 @@
 Sub_test
 ========
 
-
-Hello this a test of Sub with git plugins
-
-
-Hello next commit
+Hello, this repo is to learn php object Oriented.
 
 
-this to test
-
-Test2
 
 
-Hello hello after added user_name and pass
+
+
+
