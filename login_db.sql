@@ -1,5 +1,9 @@
 
 
+CREATE DATABASE login_sys;
+
+use login_sys;
+
 CREATE TABLE users (
 
 uid INT PRIMARY KEY AUTOINCREMENT,
