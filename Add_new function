@@ -1,0 +1,14 @@
+Add_new function.
+
+
+How to add new function/method.
+For example if you want to get email value. Just include the following function inside class User{}
+public function get_email($uid)
+{
+$result = mysql_query(“SELECT email FROM users WHERE uid = $uid”);
+$user_data = mysql_fetch_array($result);
+echo $user_data['email'];
+}
+Print email values.
+<?php $user->get_email($uid); ?>
+If you’re planning to start running a website and you’ll be using PHP. You can check the dirrerent web 
