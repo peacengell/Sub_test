@@ -4,29 +4,28 @@ session_start();
 
 include_once 'function.php';
 	
-		$user = new User();
+	$user = new User();
 
-		if ($user->get_session())
-				{	
-					//Set default location to home.php
-					header("location:home.php");
-				}
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-		{
+if ($user->get_session()) {	
+
+//Set default location to home.php
+		header("location:home.php");
+}
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
 			$login = $user->check_logins($POST['emailusername'], $POST['password']);
-				if ($login)
-				{
+				if ($login)	{
 					//Login successfully
 					//change location login.php
+					
 					header("location:login.php");
-					} else
-
-					{
+				
+				} else {
 
 						//Login failed
 						$msg = 'Username / password Wrong! Please Try again';
-					}
-		}
+				}
+}
 
 ?>
 
