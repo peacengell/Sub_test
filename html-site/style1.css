@@ -5,6 +5,8 @@
 
 */
 
+
+
 body {
  font-family: Verdana, Helvetica, Arial, sans-serif;
  background-color: #e2edff;
@@ -12,12 +14,11 @@ body {
  padding: 15px;
 }
 
-
-h1 {
+h1, h2, h3 {
  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
- font-size: x-large;
+ background-color: navy;
+ color: white;
 }
-
 
 li {
  font-size: small;
@@ -32,4 +33,44 @@ h2 {
 p {
  font-size: small;
  color: navy;
+}
+
+
+em {
+ font-style: normal;
+ text-transform: uppercase;
+}
+
+
+a {
+ font-weight: bold;
+}
+
+a:link {
+ color: black;
+}
+
+a:visited {
+ color: gray;
+}
+
+a:hover {
+ text-decoration: none;
+ color: white;
+ background-color: navy;
+}
+
+a:active {
+ color: aqua;
+ background-color: navy;
+}
+
+.fun {
+ font-family: Georgia, Times, serif;
+ color: #339999;
+ letter-spacing: 0.05em;
+}
+
+blockquote.fun {
+ font-style: italic;
 }
